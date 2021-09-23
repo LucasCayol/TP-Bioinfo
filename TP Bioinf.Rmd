@@ -1,0 +1,104 @@
+---
+title: "TP Bioinformatica"
+author: "Lucas Cayol, Agustina Descalzo, Reinaldo Donnely"
+date: "9/21/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+**a) ¿Que significa el alineamiento? ¿Como se ve si clickeas en proteinas con menor porcentaje de identidad?** 
+
+>El alineamiento de secuencias muestra el parentesco entre la secuencia con la que se trabaja (secuencia ‘query’) y la encontrada (secuencia  ‘subject’). En el caso de esta secuencia, todos los nucleótidos coinciden base por base con los de la secuencia subject, dándonos un porcentaje de identidad del 100%.
+Si analizamos otros genes que no tienen un porcentaje de identidad del 100%, podemos ver que la mayoría de los nucleótidos de nuestra secuencia están presentes en la ‘subject’ pero se encuentran ‘gaps’, es decir, se encontró una secuencia similar a la query pero más extensa, por lo que se provocan gaps. A medida que decrece el porcentaje de identidad, comienzan a aparecer también  ‘mismatches’, además de  ‘gaps’.
+
+
+**b) ¿Que proteina es?**
+
+>Fenilalanina amonio liasa
+
+**c) ¿Por que la CDS es mas chica que la region abarcada por el exon?**
+
+>Dependiendo del marco de lectura, pueden haber diversos exones para una misma secuencia codificante, lo que se conoce como splicing alternativo, por lo tanto siempre va a haber mÃ¡s exones posibles que codones, ya que estos son eliminados cuando el ARN pasa de inmaduro a maduro. 
+
+**d) ¿Donde estan los codones de iniciacion y de terminacion?**
+
+>atg 122 - tga 2272
+Lo que hicimos para darnos cuenta cual era el marco de lectura, buscamos el codón de iniciación (AUG, en el caso de la secuencia con la que trabajamos seria ATG ya que luego este se transcribe a AUG) y los codones de terminación (TAA, TAG, TGA). Buscamos donde comenzaba y terminaba utilizando la herramienta de COMMAND + F, sabiendo que el marco iba de 122 - 2272 encontramos que la secuencia de terminación era la TGA:
+
+![Image](./images/img_1.png)
+
+
+
+
+![Image](./images/img_2.png)![Image](./images/img_3.png)![Image](./images/img_4.png)
+
+>Buscar info extra en uniprot, por ej:
+
+- ontology molecular function
+
+- enzyme commission
+
+- Interaction → en qué procesos puede intervenir esta proteína
+
+- Family & domains → estructura de la proteína y la distribución de sus dominios funcionales
+
+
+
+
+
+![Image](./images/img_5.png)
+
+> 
+
+> 
+
+> Al haber un defecto en la secuencia que codifica para Fenilalanina amonio liasa, está no sintetiza ácido cinámico a partir de la fenilalanina, y este luego no puede sintetizar ácido cumárico, cuyo rol es importante en la resistencia a enfermedades en las plantas.
+
+> 
+
+> ![Image](./images/img_6.png)
+
+
+![Image](./images/img_7.png)
+> ![Image](./images/img_8.png)
+> 
+
+> 
+
+> 
+
+> 
+
+>¿Por qué la barra roja es más corta que la azul?
+
+>La barra roja representa la proteína, que se tradujo a partir del codón de inicio del ARNm hasta el codón de terminación, por eso la secuencia violeta del ARNm es más larga, ya que esta presenta todos los nucleótidos, más allá del marco de lectura. 
+
+> 
+
+> ¿Qué es el péptido señal y cuál es su función?
+> 
+
+> Cuando el ARNm llega al citoplasma unido a un ribosoma, comienza a traducirse a la proteína que corresponda al marco de lectura correspondiente. Una vez comenzada la traducción, a esta proteína se le asigna una péptido señal (secuencia de aminoácidos) la cual actúa como una especie de etiqueta que indica donde debe seguir traduciéndose esta proteína, ya sea acoplada al retículo endoplasmático rugoso, en el citoplasma, núcleo, etc. para que así la proteína llegue al lugar correcto. 
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> 
+
+> **Quitinasa del tomate:**
+> ![Image](./images/img_9.png)
+> 
+
+> Las partes de la secuencia de genes que contienen la información para producir las proteínas se llaman exones, ya que se expresan, mientras que las partes de la secuencia del gen que no codifican se llaman intrones, porque están en medio o interfieren con los exones.
+
